@@ -112,6 +112,7 @@ d3.csv("data/iris.csv").then((data) => {
 
     // Define a brush (call it brush1)
     brush1 = d3.brush()
+      .extent([[margin.left, margin.top], [width - margin.right, height - margin.bottom]])
       .on("start", clear)
       .on("brush", updateChart1);
 
@@ -173,6 +174,7 @@ d3.csv("data/iris.csv").then((data) => {
       .style("opacity", 0.5);
 
     brush2 = d3.brush()
+      .extent([[margin.left, margin.top], [width - margin.right, height - margin.bottom]])
       .on("start", clear)
       .on("brush", updateChart2);
 
