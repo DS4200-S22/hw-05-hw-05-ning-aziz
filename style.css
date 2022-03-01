@@ -5,6 +5,6 @@ body {
 
 .selected {
   stroke: black;
-  opacity: 1;
+  opacity: 1 !important;
   stroke-width: 5px;
 }
